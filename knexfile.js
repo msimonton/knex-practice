@@ -1,5 +1,5 @@
 // Update with your config settings.
-
+var dotenv = require('dotenv').config()
 module.exports = {
 
   development: {
@@ -12,9 +12,8 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: '',
+
     },
     pool: {
       min: 2,
